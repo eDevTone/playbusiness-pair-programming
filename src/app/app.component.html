@@ -1,0 +1,14 @@
+<h1>{{ legendTurn }}</h1>
+<section class="grid-game">
+  <ng-container *ngFor="let postiion of positions;let index = index;">
+    <article (click)="selected(index)">
+      {{ postiion }}
+    </article>
+  </ng-container>
+</section>
+
+<section class="form">
+  <input type="text">
+  <button type="button" (click)="reset()">Reset</button>
+  <button type="button" (click)="start()">Start</button>
+</section>
